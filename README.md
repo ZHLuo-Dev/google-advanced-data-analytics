@@ -26,15 +26,15 @@ This project uses **Logistic Regression** to predict employee turnover. The PACE
 
 ## Results
 
-| Metric | Weighted Avg | Class 0 (Stayed) | Class 1 (Left) |
-|--------|-------------|-------------------|----------------|
-| Precision | 0.79 | 0.86 | 0.44 |
-| Recall | 0.82 | 0.93 | 0.26 |
-| F1 | 0.80 | 0.90 | 0.33 |
-| AUC | 0.88 | — | — |
-| Accuracy | 0.82 | — | — |
+| Metric    | Weighted Avg | Class 0 (Stayed) | Class 1 (Left) |
+| --------- | ------------ | ---------------- | -------------- |
+| Precision | 0.79         | 0.86             | 0.45           |
+| Recall    | 0.82         | 0.93             | 0.27           |
+| F1        | 0.80         | 0.90             | 0.33           |
+| AUC       | 0.88         | —                | —              |
+| Accuracy  | 0.82         | —                | —              |
 
-The model catches most employees who stay but misses a large portion of employees who leave (recall 26% on Class 1).
+The model catches most employees who stay but misses a large portion of employees who leave (recall 27% on Class 1).
 
 ---
 
@@ -64,15 +64,15 @@ Tree-based models (decision tree, random forest, XGBoost) could improve recall o
 
 This project uses the [HR capstone dataset](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv). 14,999 rows, 10 columns.
 
-| Column | Type | Description |
-|--------|------|-------------|
-| satisfaction_level | float64 | Employee-reported job satisfaction level [0–1] |
-| last_evaluation | float64 | Score of employee's last performance review [0–1] |
-| number_project | int64 | Number of projects employee contributes to |
-| average_monthly_hours | int64 | Average number of hours employee worked per month |
-| tenure | int64 | How long the employee has been with the company (years) |
-| work_accident | int64 | Whether or not the employee experienced an accident while at work |
-| left | int64 | Whether or not the employee left the company |
-| promotion_last_5years | int64 | Whether or not the employee was promoted in the last 5 years |
-| department | str | The employee's department |
-| salary | str | The employee's salary (low, medium, or high) |
+| Column                | Type    | Description                                                       |
+| --------------------- | ------- | ----------------------------------------------------------------- |
+| satisfaction_level    | float64 | Employee-reported job satisfaction level [0–1]                    |
+| last_evaluation       | float64 | Score of employee's last performance review [0–1]                 |
+| number_project        | int64   | Number of projects employee contributes to                        |
+| average_monthly_hours | int64   | Average number of hours employee worked per month                 |
+| tenure                | int64   | How long the employee has been with the company (years)           |
+| work_accident         | int64   | Whether or not the employee experienced an accident while at work |
+| left                  | int64   | Whether or not the employee left the company                      |
+| promotion_last_5years | int64   | Whether or not the employee was promoted in the last 5 years      |
+| department            | str     | The employee's department                                         |
+| salary                | str     | The employee's salary (low, medium, or high)                      |
